@@ -127,24 +127,14 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
-@media (max-width:768px) {
-    body{ display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
+@media screen and (max-width:768px) {
+    { width: 100%;
     }
 }
-@media (max-width:480px) {
-    .why-us .col-right {
-        width: 100%;
+@media (max-width:576px) {
+    .row{
+        flex-wrap: wrap;
+        gap:75px;
     }
-    .why-us .col-left {
-        width: 100%;
-    }
-    body{ display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
+    
 }
